@@ -23,7 +23,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
@@ -32,7 +32,7 @@ jobs:
     - name: Build App
       run: npm run build
     - name: Export App
-      run: npx next export && touch ./out/.nojekyll
+      run: npm run export && touch ./out/.nojekyll
       
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.2.5
