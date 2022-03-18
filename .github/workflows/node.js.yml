@@ -9,8 +9,6 @@ on:
   pull_request:
     branches: [ main ]
     
-  workflow_dispatch:
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,16 +19,16 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - name: Installing packages
-      run: npm install && npm ci
-    - name: Build App
-      run: npm run build
+    - name: Install and Build
+        run: |
+          npm ci
+          npm run build
     - name: Export App
       run: npm run export && touch ./out/.nojekyll
       
@@ -39,5 +37,5 @@ jobs:
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         branch: gh-pages
-        publish_dir: ./out
+        publish_dir: built
         
