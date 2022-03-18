@@ -25,10 +25,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - name: Install and Build
-        run: |
-          npm ci
-          npm run build
+    - name: Installing packages
+      run: npm install && npm ci
+    - name: Build App
+      run: npm run build
     - name: Export App
       run: npm run export && touch ./out/.nojekyll
       
