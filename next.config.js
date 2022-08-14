@@ -10,7 +10,6 @@ const isProd = process.env.NODE_ENV === 'production';
 module.exports = {
   images: {
     loader: 'imgix',
-    path: 'https://deiaspie.github.io/',
-  },
-  assetPrefix: isProd ? '/courses' : '',
+    basePath: '/courses',
+  }
 };
