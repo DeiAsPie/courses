@@ -1,0 +1,1 @@
+@import url("https://deiaspie.github.io/styles.css");img{width:100%;border-radius:10px}.posts{display:grid;grid-template-columns:repeat(2,1fr);grid-gap:30px;gap:30px;margin-top:30px}.card{padding:15px;border-radius:10px;box-shadow:0 4px 8px 0 rgba(0,0,0,.8)}@media (max-width:500px){.posts{grid-template-columns:1fr}}
