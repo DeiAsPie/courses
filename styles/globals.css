@@ -5,6 +5,11 @@ img {
   border-radius: 10px;
 }
 
+.small-icon {
+  height: 22px;
+  width: 100px;
+}
+
 .posts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
