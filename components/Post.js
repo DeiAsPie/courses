@@ -10,6 +10,7 @@ export default function Post({ post }) {
       <p>{post.frontmatter.summary}</p>
 
       <div className="buttons">
+        
         <Link href={`${post.frontmatter.website}`}>
           <a className='button'>Website</a>
         </Link>
