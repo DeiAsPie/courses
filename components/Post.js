@@ -18,6 +18,7 @@ export default function Post({ post }) {
         <Link href={`${post.frontmatter.video}`}>
           <a className='button'>Video</a>
         </Link>
+        
       </div>
 
     </div>
