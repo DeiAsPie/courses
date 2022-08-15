@@ -128,7 +128,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "b9b67390402502fa"; }
+/******/ 		__webpack_require__.h = function() { return "2b85b3debc1fc28d"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -591,7 +591,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	!function() {
-/******/ 		__webpack_require__.p = "/_next/";
+/******/ 		__webpack_require__.p = "/courses/_next/";
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/react refresh */
