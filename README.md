@@ -4,4 +4,4 @@ This repository is intended to contain the courses that would provide quality, y
 
 # Help! however you like.
 
-Without the support of the community this idea and intention would not breathe life. Suggest courses to be added, open issues, participate in discussions or even give a PR.
+Without the support of the community this idea and intention would not breathe life. [Suggest courses to be added, open issues, participate in discussions or even give a PR.](https://github.com/DeiAsPie/deiaspie.github.io/discussions/1)
