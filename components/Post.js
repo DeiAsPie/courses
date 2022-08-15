@@ -9,13 +9,15 @@ export default function Post({ post }) {
 
       <p>{post.frontmatter.summary}</p>
 
-      <Link href={`${post.frontmatter.website}`}>
-        <a className='button'>Website</a>
-      </Link>
+      <div className="buttons">
+        <Link href={`${post.frontmatter.website}`}>
+          <a className='button'>Website</a>
+        </Link>
 
-      <Link href={`${post.frontmatter.video}`}>
-        <a className='button'>Video</a>
-      </Link>
+        <Link href={`${post.frontmatter.video}`}>
+          <a className='button'>Video</a>
+        </Link>
+      </div>
 
     </div>
   )
