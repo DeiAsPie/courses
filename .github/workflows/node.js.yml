@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [ 18.x ]
+        node-version: [ 19.x ]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -32,8 +32,8 @@ jobs:
     - name: Export App
       run: npm run export && touch ./out/.nojekyll
       
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.4.0
+    - name: Deploy to GitHub Pages 🚀
+      uses: JamesIves/github-pages-deploy-action@v4.4.1
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         branch: gh-pages
