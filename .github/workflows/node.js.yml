@@ -9,8 +9,12 @@ on:
   pull_request:
     branches: [ main ]
     
+permissions:
+  contents: write
+    
 jobs:
-  build:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
 
     strategy:
@@ -19,16 +23,20 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
+    - name: CCheckout 🛎️
+      uses: actions/checkout@v3
+      
+    - name: Install and Build 🔧 
+      run: |
+          npm ci
+          npm run build
+      
+      
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3.5.1
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - name: Installing packages
-      run: npm install && npm ci
-    - name: Build App
-      run: npm run build
     - name: Export App
       run: npm run export && touch ./out/.nojekyll
       
