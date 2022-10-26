@@ -10,14 +10,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "gray-matter": "^4.0.3",
-    "marked": "^4.0.18",
-    "next": "12.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "gray-matter": "",
+    "marked": "",
+    "next": "",
+    "react": "",
+    "react-dom": ""
   },
   "devDependencies": {
-    "eslint": "8.11.0",
-    "eslint-config-next": "12.1.0"
+    "eslint": "",
+    "eslint-config-next": ""
   }
 }
