@@ -33,7 +33,8 @@ jobs:
       run: npm run export && touch ./out/.nojekyll
       
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.4.0
+      uses: JamesIves/github-pages-deploy-action@v4.4.1
+
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         branch: gh-pages
