@@ -31,10 +31,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - name: Install and Build 🔧 
+    
+    - name: Install packages ⏬
+      run: npm ci
+    
+    - name: Build 🔧 
       run: |
-          npm install
-          npm ci
           npm run build
       
     - name: Export App
