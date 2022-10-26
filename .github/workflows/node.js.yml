@@ -33,11 +33,10 @@ jobs:
         cache: 'npm'
     
     - name: Install packages ⏬
-      run: npm ci
+      run: npm install
     
     - name: Build 🔧 
-      run: |
-          npm run build
+      run: npm run build
       
     - name: Export App
       run: npm run export && touch ./out/.nojekyll
