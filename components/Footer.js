@@ -4,9 +4,7 @@ export default function Footer() {
   return (
         <footer className="bottom center">
             <small>
-                <p>
-                  Copyright © 2021-2022 <strong>DeiAsPie</strong>. This work by <strong>DeiAsPie</strong> is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
-                </p>
+                <p>Copyright © 2021-2022 <strong>DeiAsPie</strong>. This work by <strong>DeiAsPie</strong> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank">CC BY-NC-ND 4.0.<img className="small-icon" src="https://deiaspie.github.io/resources/CC%20BY-NC-ND%204.0.png" /></a></p>
             </small>
         </footer>
   )
