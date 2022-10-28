@@ -4,7 +4,7 @@ export default function Header() {
   return (
       <header className='top center sticker glassy'>
           <div >
-            <h1>Recommended Courses</h1>
+            <h1>DeiAsPie's Recommended Courses 🙂</h1>
           </div>
       </header>
   )
