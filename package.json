@@ -1,23 +1,23 @@
 {
-  "name": "courses",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "export": "next export",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "gray-matter": "",
-    "marked": "",
-    "next": "",
-    "react": "",
-    "react-dom": ""
-  },
-  "devDependencies": {
-    "eslint": "",
-    "eslint-config-next": ""
-  }
+    "name": "courses",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "export": "next export",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "gray-matter": "",
+        "marked": "",
+        "next": "",
+        "react": "",
+        "react-dom": ""
+    },
+    "devDependencies": {
+        "eslint": "",
+        "eslint-config-next": ""
+    }
 }

@@ -1,10 +1,10 @@
 const nextConfig = {
-  reactStrictMode: true,
+    reactStrictMode: true,
 }
 
 module.exports = nextConfig
 
 module.exports = {
-  basePath: '/courses',
-  // assetPrefix: '/courses',
+    basePath: '/courses',
+    // assetPrefix: '/courses',
 };
